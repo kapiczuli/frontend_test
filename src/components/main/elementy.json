@@ -1,0 +1,26 @@
+[
+    {
+        "element": "celement1",
+        "opcja": "opcja1"
+    },
+    {
+        "element": "aelement2",
+        "opcja": "opcja2"
+    },
+    {
+        "element": "gelement3",
+        "opcja": "losowe"
+    },
+    {
+        "element": "xelement4",
+        "opcja": "losowe"
+    },
+    {
+        "element": "kelement5",
+        "opcja": "losowe"
+    },
+    {
+        "element": "zelement6",
+        "opcja": "losowe"
+    }
+]
