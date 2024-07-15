@@ -1,0 +1,77 @@
+@import "colors";
+
+.footer-container{
+    width: 100vw;
+    height: 18vh;
+    background-color: $black;
+    z-index: 999;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0;
+}
+
+.box {
+    font-size:2em;
+    border:4px solid $white;
+    padding:0px 3px;
+    width:3.5em;
+    transition: transform 0.5s; /* Dodajemy animację */
+    color: $white;
+}
+.box:hover{
+    border: 4px solid $orange;
+    transform: rotate(360deg); /* Dodajemy obrót */
+}
+
+
+@keyframes slideDown {
+    0% {
+      transform: translateY(10%);
+    }
+    100% {
+      transform: translateY(-200%);
+    }
+  }
+  
+  .pokaz{
+    background-color: $black;
+    border-radius: 0.5em;
+    border: 1px solid $white;
+    width: 14em;
+    height: 3em;
+    color: $white;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+  
+  .blok {
+      display: none;
+      position: relative;
+      animation: slideDown 0.5s forwards;
+      cursor: pointer;
+  }
+  
+  .blok:target {
+      display: block;
+      position: absolute;
+      width: 14em;
+      background-color: $white;
+  }
+a{
+    text-decoration: none;
+    color: $white;
+}
+.nabthat{
+  color: $white;
+}
+@media screen and (max-width: 600px){
+  .nabthat{
+    display: none;
+  }
+}
